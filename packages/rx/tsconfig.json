@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"declarationDir": "dist",
+		"lib": ["es5", "es6", "dom"],
+		"noImplicitAny": true,
+		"diagnostics": true,
+		"noImplicitThis": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"noEmitOnError": true
+	},
+	"include": ["src"]
+}
