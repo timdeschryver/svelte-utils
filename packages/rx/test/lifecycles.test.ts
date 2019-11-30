@@ -3,7 +3,7 @@ import { render } from '@testing-library/svelte'
 import Fixture from './fixtures/Fixture.svelte'
 
 test('integration', async () => {
-	let eventLog: string[] = []
+	const eventLog: string[] = []
 	const { component, unmount } = render(Fixture, {
 		props: {
 			name: 'world',
@@ -29,7 +29,7 @@ test('integration', async () => {
 })
 
 test('respects the lifecycles  order', async () => {
-	let eventLog: string[] = []
+	const eventLog: string[] = []
 	const { component, unmount } = render(Fixture, {
 		props: {
 			name: 'world',
@@ -59,7 +59,7 @@ test('onMount$ unsubscribes after mount', async () => {
 })
 
 test('beforeUpdate$ unsubscribes after destroy', async () => {
-	let eventLog: string[] = []
+	const eventLog: string[] = []
 	const { component, unmount } = render(Fixture, {
 		props: {
 			log: (evt: string) => eventLog.push(evt),
@@ -73,7 +73,7 @@ test('beforeUpdate$ unsubscribes after destroy', async () => {
 })
 
 test('afterUpdate$ unsubscribes after destroy', async () => {
-	let eventLog: string[] = []
+	const eventLog: string[] = []
 	const { component, unmount } = render(Fixture, {
 		props: {
 			log: (evt: string) => eventLog.push(evt),
@@ -87,7 +87,7 @@ test('afterUpdate$ unsubscribes after destroy', async () => {
 })
 
 test('onDestroy$ unsubscribes after destroy', async () => {
-	let eventLog: string[] = []
+	const eventLog: string[] = []
 	const { component, unmount } = render(Fixture, {
 		props: {
 			log: (evt: string) => eventLog.push(evt),

@@ -8,3 +8,11 @@ Reactive lifecycle functions:
 - `beforeUpdate$`
 - `afterUpdate$`
 - `onDestroy$`
+
+## svelte-xstate
+
+XState stores:
+
+- `actor`
+- `machine`
+- `service`

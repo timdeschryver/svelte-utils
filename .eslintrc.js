@@ -1,6 +1,6 @@
 module.exports = {
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint', 'svelte3'],
+	plugins: ['@typescript-eslint', 'svelte3', 'prettier'],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'prettier',
@@ -14,6 +14,7 @@ module.exports = {
 	],
 	rules: {
 		'prettier/prettier': 'error',
-		'svelte3/lint-template': 2,
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
 	},
 }
