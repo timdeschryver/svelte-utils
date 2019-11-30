@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install pnpm
+        run: npm install pnpm -g
+      - name: pnpm install
+        run: pnpm install --ignore-scripts
+      - name: run tests
+        run: pnpm run test:all
+        env:
+          CI: 'true'
+      - name: run build
+        run: pnpm run build:all
