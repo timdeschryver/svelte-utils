@@ -1,5 +1,9 @@
 {
 	"name": "svelte-utils",
+	"scripts": {
+		"test:all": "pnpm run test -r",
+		"build:all": "pnpm run build -r"
+	},
 	"devDependencies": {
 		"@testing-library/svelte": "^1.9.1",
 		"@types/jest": "^24.0.23",
