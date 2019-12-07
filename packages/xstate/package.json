@@ -1,7 +1,7 @@
 {
-	"name": "svelte-rx",
+	"name": "svelte-xstate",
 	"version": "0.0.0",
-	"description": "Reactive extensions for Svelte",
+	"description": "XState stores for Svelte",
 	"main": "index.js",
 	"module": "index.mjs",
 	"types": "index.d.ts",
@@ -14,15 +14,15 @@
 	},
 	"keywords": [
 		"svelte",
-		"rxjs"
+		"xstate"
 	],
 	"author": "Tim Deschryver",
 	"license": "MIT",
 	"peerDependencies": {
-		"rxjs": "^6.5.3",
-		"svelte": "^3.15.0"
+		"svelte": "^3.15.0",
+		"xstate": "^4.7.0"
 	},
 	"devDependencies": {
-		"rxjs": "^6.5.3"
+		"xstate": "^4.7.0"
 	}
 }
