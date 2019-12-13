@@ -9,7 +9,7 @@ Reactive lifecycle functions:
 - `afterUpdate$`
 - `onDestroy$`
 
-## svelte-xstate
+## svelte-xstate-stores
 
 XState stores:
 

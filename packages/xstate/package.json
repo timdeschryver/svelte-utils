@@ -1,5 +1,5 @@
 {
-	"name": "svelte-xstate",
+	"name": "svelte-xstate-stores",
 	"version": "0.0.0",
 	"description": "XState stores for Svelte",
 	"main": "index.js",
