@@ -1,15 +1,23 @@
 {
-	"name": "svelte-utils",
+	"name": "svelte-utils-monorepo",
+	"private": true,
 	"scripts": {
 		"test:all": "pnpm run test -r",
-		"build:all": "pnpm run build -r"
+		"build:all": "pnpm run build -r",
+		"release": "changeset publish"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*"
+		]
 	},
 	"devDependencies": {
-		"@testing-library/svelte": "^1.9.1",
+		"@changesets/cli": "^2.4.1",
+		"@testing-library/svelte": "^1.11.0",
 		"@types/jest": "^24.0.23",
-		"@types/node": "^12.12.14",
-		"@typescript-eslint/eslint-plugin": "^2.9.0",
-		"@typescript-eslint/parser": "^2.9.0",
+		"@types/node": "^12.12.17",
+		"@typescript-eslint/eslint-plugin": "^2.11.0",
+		"@typescript-eslint/parser": "^2.11.0",
 		"eslint": "^6.7.2",
 		"eslint-config-prettier": "^6.7.0",
 		"eslint-plugin-prettier": "^3.1.1",
@@ -18,10 +26,10 @@
 		"jest-transform-svelte": "^2.1.0",
 		"prettier": "^1.19.1",
 		"prettier-plugin-svelte": "^0.7.0",
-		"rollup": "^1.27.6",
+		"rollup": "^1.27.12",
 		"rollup-plugin-sucrase": "^2.1.0",
-		"svelte": "^3.16.0",
+		"svelte": "^3.16.4",
 		"ts-jest": "^24.2.0",
-		"typescript": "^3.7.2"
+		"typescript": "^3.7.3"
 	}
 }
