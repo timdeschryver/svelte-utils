@@ -32,3 +32,11 @@ jobs:
           CI: 'true'
       - name: run build
         run: pnpm run build:all
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@master
+        with:
+          publish: pnpm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: github.ref == 'refs/heads/master'

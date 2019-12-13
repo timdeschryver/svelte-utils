@@ -18,6 +18,14 @@
 	],
 	"author": "Tim Deschryver",
 	"license": "MIT",
+	"homepage": "https://github.com/timdeschryver/svelte-utils/tree/master/packages/rx#readme",
+	"repository": "https://github.com/timdeschryver/svelte-utils/tree/master/packages/rx",
+	"bugs": {
+		"url": "https://github.com/timdeschryver/svelte-utils/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"peerDependencies": {
 		"rxjs": "^6.5.3",
 		"svelte": "^3.15.0"
