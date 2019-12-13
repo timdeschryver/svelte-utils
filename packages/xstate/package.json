@@ -2,9 +2,12 @@
 	"name": "svelte-xstate-stores",
 	"version": "0.0.0",
 	"description": "XState stores for Svelte",
-	"main": "index.js",
-	"module": "index.mjs",
-	"types": "index.d.ts",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"prebuild": "rm -rf ./dist",
 		"build-declarations": "tsc --emitDeclarationOnly",
@@ -19,7 +22,10 @@
 	"author": "Tim Deschryver",
 	"license": "MIT",
 	"homepage": "https://github.com/timdeschryver/svelte-utils/tree/master/packages/xstate#readme",
-	"repository": "https://github.com/timdeschryver/svelte-utils/tree/master/packages/xstate",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/timdeschryver/svelte-utils.git"
+	},
 	"publishConfig": {
 		"access": "public"
 	},

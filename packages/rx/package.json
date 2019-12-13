@@ -2,9 +2,12 @@
 	"name": "svelte-rx",
 	"version": "0.0.0",
 	"description": "Reactive extensions for Svelte",
-	"main": "index.js",
-	"module": "index.mjs",
-	"types": "index.d.ts",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"prebuild": "rm -rf ./dist",
 		"build-declarations": "tsc --emitDeclarationOnly",
@@ -19,7 +22,10 @@
 	"author": "Tim Deschryver",
 	"license": "MIT",
 	"homepage": "https://github.com/timdeschryver/svelte-utils/tree/master/packages/rx#readme",
-	"repository": "https://github.com/timdeschryver/svelte-utils/tree/master/packages/rx",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/timdeschryver/svelte-utils.git"
+	},
 	"bugs": {
 		"url": "https://github.com/timdeschryver/svelte-utils/issues"
 	},
