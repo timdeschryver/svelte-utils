@@ -1,6 +1,6 @@
 {
 	"name": "svelte-rx",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Reactive extensions for Svelte",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -10,7 +10,6 @@
 		"prebuild": "rm -rf ./dist",
 		"build-declarations": "tsc --emitDeclarationOnly",
 		"build": "rollup -c && npm run build-declarations",
-		"postbuild": "cp ./package.json ./dist",
 		"test": "jest --coverage"
 	},
 	"keywords": [
