@@ -1,10 +1,10 @@
 {
 	"name": "svelte-xstate-stores",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "XState stores for Svelte",
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
-	"types": "dist/index.d.ts",
+	"main": "index.js",
+	"module": "index.mjs",
+	"types": "index.d.ts",
 	"files": ["dist"],
 	"scripts": {
 		"prebuild": "rm -rf ./dist",
