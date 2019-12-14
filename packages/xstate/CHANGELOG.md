@@ -1,5 +1,11 @@
 # svelte-xstate-stores
 
+## 0.0.4
+
+### Patch Changes
+
+- fix: revert 53e58487a9be805d6468e08ddc49536205236595
+
 ## 0.0.3
 
 ### Patch Changes
