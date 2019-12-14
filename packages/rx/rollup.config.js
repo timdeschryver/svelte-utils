@@ -6,13 +6,13 @@ export default {
 	output: [
 		{
 			name: pkg.name,
-			file: `./dist/${pkg.main}`,
+			file: pkg.main,
 			format: 'cjs',
 			sourcemap: true,
 		},
 		{
 			name: pkg.name,
-			file: `./dist/${pkg.module}`,
+			file: pkg.module,
 			format: 'es',
 			sourcemap: true,
 		},

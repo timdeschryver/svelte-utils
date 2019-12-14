@@ -1,5 +1,11 @@
 # svelte-xstate-stores
 
+## 0.0.5
+
+### Patch Changes
+
+- fix: dist folder
+
 ## 0.0.4
 
 ### Patch Changes
