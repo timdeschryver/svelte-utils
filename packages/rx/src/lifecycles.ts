@@ -1,22 +1,21 @@
 import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte'
 import { Subject, defer } from 'rxjs'
+import { take, takeUntil } from 'rxjs/operators'
 
 export const onMount$ = defer(() => {
 	const subject = new Subject<void>()
 	onMount(() => {
 		subject.next()
-		subject.complete()
 	})
-	return subject.asObservable()
+	return subject.asObservable().pipe(take(1))
 })
 
 export const onDestroy$ = defer(() => {
 	const subject = new Subject<void>()
 	onDestroy(() => {
 		subject.next()
-		subject.complete()
 	})
-	return subject.asObservable()
+	return subject.asObservable().pipe(take(1))
 })
 
 export const beforeUpdate$ = defer(() => {
@@ -24,10 +23,7 @@ export const beforeUpdate$ = defer(() => {
 	beforeUpdate(() => {
 		subject.next()
 	})
-	onDestroy(() => {
-		subject.complete()
-	})
-	return subject.asObservable()
+	return subject.asObservable().pipe(takeUntil(onDestroy$))
 })
 
 export const afterUpdate$ = defer(() => {
@@ -35,8 +31,5 @@ export const afterUpdate$ = defer(() => {
 	afterUpdate(() => {
 		subject.next()
 	})
-	onDestroy(() => {
-		subject.complete()
-	})
-	return subject.asObservable()
+	return subject.asObservable().pipe(takeUntil(onDestroy$))
 })

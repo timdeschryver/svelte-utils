@@ -1,5 +1,11 @@
 # svelte-rx
 
+## 0.0.6
+
+### Patch Changes
+
+- refactor: use rjxs operators to complete streams
+
 ## 0.0.5
 
 ### Patch Changes
