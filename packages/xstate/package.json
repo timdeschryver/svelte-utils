@@ -1,6 +1,6 @@
 {
 	"name": "svelte-xstate-stores",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "XState stores for Svelte",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -8,7 +8,7 @@
 	"files": ["dist"],
 	"scripts": {
 		"prebuild": "rm -rf ./dist",
-		"build-declarations": "tsc --emitDeclarationOnly",
+		"build-declarations": "tsc --project tsconfig.declarations.json",
 		"build": "rollup -c && npm run build-declarations",
 		"test": "jest --coverage"
 	},

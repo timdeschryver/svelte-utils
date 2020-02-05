@@ -1,5 +1,11 @@
 # svelte-rx
 
+## 0.0.7
+
+### Patch Changes
+
+- fix: build for es5
+
 ## 0.0.6
 
 ### Patch Changes
