@@ -1,5 +1,11 @@
 # svelte-xstate-stores
 
+## 0.0.6
+
+### Patch Changes
+
+- fix: build for es5
+
 ## 0.0.5
 
 ### Patch Changes

@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"declarationDir": "dist",
-		"lib": ["es5", "es6", "dom"],
+		"target": "es5",
+		"lib": ["es6", "dom"],
 		"noImplicitAny": true,
 		"diagnostics": true,
 		"noImplicitThis": true,
